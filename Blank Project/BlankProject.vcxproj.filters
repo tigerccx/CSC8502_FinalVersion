@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SceneController.cpp" />
+    <ClCompile Include="SpotLightController.cpp" />
+    <ClCompile Include="WaterAnimator.cpp" />
+    <ClCompile Include="MirrorCameraController.cpp" />
+    <ClCompile Include="CameraAutoController.cpp" />
+    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="ObjectController.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="SceneController.h" />
+    <ClInclude Include="SpotLightController.h" />
+    <ClInclude Include="WaterAnimator.h" />
+    <ClInclude Include="MirrorCameraController.h" />
+    <ClInclude Include="CameraAutoController.h" />
+    <ClInclude Include="GameController.h" />
+    <ClInclude Include="ObjectController.h" />
+  </ItemGroup>
+</Project>

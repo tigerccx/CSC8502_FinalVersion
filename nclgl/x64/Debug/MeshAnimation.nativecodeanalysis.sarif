@@ -1,0 +1,124 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 * ，然后将结果转换到 8 字节值。在调用运算符 * 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Sources/Files/CW/CSC8502/CSC8502 2021/nclgl/MeshAnimation.cpp"
+                },
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 20,
+                  "endLine": 30,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0MeshAnimation@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0032C1B0 -il C:\\Users\\tigerccx\\AppData\\Local\\Temp\\_CL_50ff7e00ast -typedil -f MeshAnimation.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\ -I D:\\Sources\\Files\\ProjectSupports\\vcpkg\\installed\\x64-windows\\include -nologo -W 3 -diagnostics:column -Ot -DCODE_ANALYSIS -D_MBCS -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -Fox64\\Debug\\MeshAnimation.obj -FdD:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\x64\\Debug\\nclgl.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\Third Party\\ -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -external:I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/meshmaterial.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "3bd157a414753b63472d519d931a3879"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/meshmaterial.h"
+          },
+          "hashes": {
+            "md5": "42f24b995ff2f9d25b69e84be4663421"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/common.h"
+          },
+          "hashes": {
+            "md5": "e098d3c4e89140393b71baa430f075fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///D:/Sources/Files/CW/CSC8502/CSC8502 2021/nclgl/MeshAnimation.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "85f81414eaea4136d607fc3020274c4c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/meshanimation.h"
+          },
+          "hashes": {
+            "md5": "9d8f05955310866dd270474099a36e84"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/matrix4.h"
+          },
+          "hashes": {
+            "md5": "db20b51ae8420edf8e67a2f18749da62"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/vector3.h"
+          },
+          "hashes": {
+            "md5": "2edc3d4b7dee29a1f4781797d87371c4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/nclgl/vector4.h"
+          },
+          "hashes": {
+            "md5": "7a0161e0141aaf368a036d3ab8fc788f"
+          }
+        }
+      ]
+    }
+  ]
+}

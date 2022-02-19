@@ -1,0 +1,81 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C6308",
+          "message": {
+            "text": "“realloc”可能返回 null 指针: 将 null 指针赋给“exts_i”(后者将作为参数传递给“realloc”)将导致原始内存块泄漏。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/Sources/Files/CW/CSC8502/CSC8502 2021/Third Party/glad/glad.c"
+                },
+                "region": {
+                  "startLine": 747,
+                  "startColumn": 37,
+                  "endLine": 747,
+                  "endColumn": 91
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "get_exts",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30133.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0032C1B0 -il C:\\Users\\tigerccx\\AppData\\Local\\Temp\\_CL_a4ffa655ast -typedil -f ..\\Third Party\\glad\\glad.c -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930133 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\ -I D:\\Sources\\Files\\ProjectSupports\\vcpkg\\installed\\x64-windows\\include -nologo -W 3 -diagnostics:column -Ot -DCODE_ANALYSIS -D_MBCS -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -Fox64\\Debug\\glad.obj -FdD:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\x64\\Debug\\nclgl.pdb -external:W 3 -Gd -analyze:projectdirectory D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\Third Party\\ -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -external:I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -external:I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um -I D:\\Sources\\Files\\CW\\CSC8502\\CSC8502 2021\\nclgl\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/Sources/Files/CW/CSC8502/CSC8502 2021/Third Party/glad/glad.c"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "6c62f145ccd11c3920922eddbe0aa311"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/third party/glad/glad.h"
+          },
+          "hashes": {
+            "md5": "4c57b0392715839d4ddeb1de355f4f99"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/sources/files/cw/csc8502/csc8502 2021/third party/khr/khrplatform.h"
+          },
+          "hashes": {
+            "md5": "b17f66c1be779bdb02ecccff7d294a91"
+          }
+        }
+      ]
+    }
+  ]
+}
