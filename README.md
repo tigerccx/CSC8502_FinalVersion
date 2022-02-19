@@ -3,7 +3,7 @@
 This is the final version of the Computer Graphics coursework from CSC8502.
 The original codebase is adapted with a lightweight Entity-Component framework.
 ## Control
-- Camera Control: [W,A,S,D] to move the camera, [Q,E] to lower/raise the camera, [Mouse Movement] to look around with the camera. Camera auto navigation can be disabled with any of [W,A,S,D,Q,E].
+- Camera Control: [W,A,S,D] to move the camera, [Q,E] to lower/raise the camera, [Mouse Movement] to look around with the camera, hold [Shift] to accelerate camera movement. Camera auto navigation can be disabled with any of [W,A,S,D,Q,E].
 - Light Control: [Comma, Period] to rotate the main light (directional light) in counter-clockwise/clockwise order, [L,K] to rotate the main light up/down. 
 - Effect Control: [R] to enable volumetric lighting; [T] to enable blurring; [Y] to enable double vision; [U] to enable colour grading.
 ## Special Features
