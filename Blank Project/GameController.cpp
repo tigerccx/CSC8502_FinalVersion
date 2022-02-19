@@ -15,26 +15,6 @@ void GameController::Update(float dt)
 		ppoColourGrading->isEnabled = !ppoColourGrading->isEnabled;
 	}
 
-
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_1)) {
-		transInControl = goDirectionalLight->transform;
-	}
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_2)) {
-		transInControl = goSpotlight->transform;
-	}
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_3)) {
-		transInControl = goPointlights[0]->transform;
-	}
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_4)) {
-		transInControl = goPointlights[1]->transform;
-	}
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_5)) {
-		transInControl = goPointlights[2]->transform;
-	}
-	if (Window::GetKeyboard()->KeyTriggered(KEYBOARD_6)) {
-		transInControl = goMirror->transform;
-	}
-
 	float speed = 5.0f;
 	float offsetX = 0;
 	float offsetY = 0;
